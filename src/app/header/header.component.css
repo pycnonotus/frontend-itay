@@ -1,9 +1,29 @@
+:host {
+  position: sticky;
+
+}
+
 nav {
-  display: flex
+  display: flex;
 }
 
 ul {
   display: flex;
   list-style-type: none;
 
+}
+
+button {
+  color: var(--off-white);
+  font-size: 1.2em;
+  text-shadow: 1px 1px 2px black;
+}
+
+button.active,
+button:hover {
+  color: white;
+}
+
+.row {
+  padding: 1em 0;
 }

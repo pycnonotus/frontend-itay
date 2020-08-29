@@ -1,6 +1,11 @@
 :root {
   --dark-gray: rgb(34, 34, 34);
+  --off-white: #eeeeee;
   --site-width: 1024px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html,
@@ -20,6 +25,15 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-image: url('assets/img/bg-main.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+
+
 }
 
 .row {
@@ -39,4 +53,16 @@ button {
   font-variant-ligatures: normal;
   font-variant-numeric: normal;
   font-weight: 500;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.bg-white {
+  background-color: white;
 }

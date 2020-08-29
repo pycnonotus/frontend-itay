@@ -9,9 +9,12 @@ import { FooterComponent } from './footer/footer.component';
 
 // UI STUFF
 import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, HomePageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -19,6 +22,8 @@ import { MatButtonModule } from '@angular/material/button';
 
     // UI STUFF
     MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
